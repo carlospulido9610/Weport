@@ -66,9 +66,9 @@ export default function ServicesSection() {
     return (
         <section
             id="services"
-            className="relative w-full py-20 md:py-28 bg-neutral-950 text-[#fbf5e9] rounded-t-[2rem] md:rounded-t-[3rem] -mt-8 z-20 overflow-hidden"
+            className="relative w-full py-16 md:py-28 bg-neutral-950 text-[#fbf5e9] rounded-t-[2rem] md:rounded-t-[3rem] -mt-8 z-20 overflow-hidden"
         >
-            <div className="max-w-[85rem] mx-auto px-6 md:px-[var(--container-padding)] relative w-full">
+            <div className="max-w-[85rem] mx-auto px-4 md:px-[var(--container-padding)] relative w-full">
 
                 <AnimateIn variant="fade-up" delay={0.1}>
                     <div className="mb-10 md:mb-16 flex flex-col md:flex-row md:items-end justify-between gap-6">
@@ -84,14 +84,14 @@ export default function ServicesSection() {
                     </div>
                 </AnimateIn>
 
-                {/* Bento Grid - Balanced Proportions */}
-                <div className="grid grid-cols-1 md:grid-cols-12 auto-rows-auto md:auto-rows-[280px] gap-4">
+                {/* Bento Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
                     {services.map((service, i) => (
                         <AnimateIn
                             key={service.id}
                             variant="fade-up"
                             delay={0.2 + (i * 0.1)}
-                            className={`group relative rounded-[1.5rem] p-6 lg:p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl ${service.className}`}
+                            className={`group relative rounded-[1.5rem] p-5 md:p-6 lg:p-8 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl min-h-[200px] md:min-h-[280px] ${service.className}`}
                         >
                             {/* Top row */}
                             <div className="flex justify-between items-start z-10 mb-6 md:mb-0">

@@ -22,17 +22,17 @@ export default function ContactSection() {
     return (
         <section
             id="contact"
-            className="relative w-full min-h-[100svh] flex flex-col justify-center py-24 md:pt-32 md:pb-40 bg-[#fbf5e9] text-black rounded-t-[2rem] md:rounded-t-[3rem] -mt-8 z-30"
+            className="relative w-full flex flex-col justify-center py-16 md:pt-32 md:pb-40 bg-[#fbf5e9] text-black rounded-t-[2rem] md:rounded-t-[3rem] -mt-8 z-30"
         >
             <div className="max-w-7xl mx-auto px-4 md:px-[var(--container-padding)] w-full">
 
                 {/* Header */}
                 <AnimateIn variant="fade-up" delay={0.1}>
-                    <div className="flex justify-between items-end mb-16 border-b border-black/10 pb-6">
-                        <h2 className="text-5xl md:text-8xl font-normal uppercase tracking-tight leading-none">
+                    <div className="flex justify-between items-end mb-8 md:mb-16 border-b border-black/10 pb-4 md:pb-6">
+                        <h2 className="text-4xl sm:text-5xl md:text-8xl font-normal uppercase tracking-tight leading-none">
                             Contact
                         </h2>
-                        <span className="text-[9px] uppercase tracking-[0.4em] text-black/40 self-end">
+                        <span className="text-[9px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-black/40 self-end">
                             Let&apos;s Talk
                         </span>
                     </div>
@@ -65,7 +65,7 @@ export default function ContactSection() {
                                     </h3>
                                 </div>
 
-                                <div className="mt-16 flex flex-col gap-6">
+                                <div className="mt-6 md:mt-16 flex flex-col gap-6">
                                     <div>
                                         <span className="bento-label block text-white/40 mb-2">Location</span>
                                         <p className="text-lg">Bogotá, Colombia</p>
